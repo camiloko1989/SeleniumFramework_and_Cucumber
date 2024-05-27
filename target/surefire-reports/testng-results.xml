@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-05-22T20:15:35 COT" name="Suite" finished-at="2024-05-22T20:16:32 COT" duration-ms="57384">
+    <groups>
+      <group name="Purchase">
+        <method signature="SubmitOrderTest.SubmitOrder(java.util.HashMap)[pri:0, instance:seleniumproject.test.SubmitOrderTest@1972e513]" name="SubmitOrder" class="seleniumproject.test.SubmitOrderTest"/>
+      </group> <!-- Purchase -->
+    </groups>
+    <test started-at="2024-05-22T20:15:35 COT" name="Submit Order Test" finished-at="2024-05-22T20:16:09 COT" duration-ms="33602">
+      <class name="seleniumproject.test.SubmitOrderTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:seleniumproject.test.SubmitOrderTest@1972e513]" started-at="2024-05-22T20:15:35 COT" name="launchApplication" finished-at="2024-05-22T20:15:41 COT" duration-ms="5499" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="SubmitOrder(java.util.HashMap)[pri:0, instance:seleniumproject.test.SubmitOrderTest@1972e513]" started-at="2024-05-22T20:15:41 COT" name="SubmitOrder" data-provider="getData" finished-at="2024-05-22T20:15:52 COT" duration-ms="11235" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Abc123456#, product=ZARA COAT 3, email=camilojimenez@mail.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SubmitOrder -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:seleniumproject.test.SubmitOrderTest@1972e513]" started-at="2024-05-22T20:15:52 COT" name="launchApplication" finished-at="2024-05-22T20:15:57 COT" duration-ms="5047" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="SubmitOrder(java.util.HashMap)[pri:0, instance:seleniumproject.test.SubmitOrderTest@1972e513]" started-at="2024-05-22T20:15:57 COT" name="SubmitOrder" data-provider="getData" finished-at="2024-05-22T20:16:08 COT" duration-ms="11442" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Abc1234567#, product=ADIDAS ORIGINAL, email=camilogarcia@mail.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SubmitOrder -->
+        <test-method signature="orderHistoryTest(java.lang.String)[pri:0, instance:seleniumproject.test.SubmitOrderTest@1972e513]" started-at="2024-05-22T20:16:08 COT" name="orderHistoryTest" data-provider="getData" finished-at="2024-05-22T20:16:08 COT" depends-on-methods="seleniumproject.test.SubmitOrderTest.SubmitOrder" duration-ms="0" status="FAIL">
+          <exception class="org.testng.internal.reflect.MethodMatcherException">
+            <message>
+              <![CDATA[
+[public void seleniumproject.test.SubmitOrderTest.orderHistoryTest(java.lang.String)] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
+Data provider mismatch
+Method: orderHistoryTest([java.lang.String arg0])
+Arguments: [(java.util.HashMap) {password=Abc123456#, product=ZARA COAT 3, email=camilojimenez@mail.com}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.internal.reflect.MethodMatcherException: 
+[public void seleniumproject.test.SubmitOrderTest.orderHistoryTest(java.lang.String)] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
+Data provider mismatch
+Method: orderHistoryTest([java.lang.String arg0])
+Arguments: [(java.util.HashMap) {password=Abc123456#, product=ZARA COAT 3, email=camilojimenez@mail.com}]
+at org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:46)
+at org.testng.internal.Parameters.injectParameters(Parameters.java:915)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.internal.reflect.MethodMatcherException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- orderHistoryTest -->
+      </class> <!-- seleniumproject.test.SubmitOrderTest -->
+    </test> <!-- Submit Order Test -->
+    <test started-at="2024-05-22T20:16:09 COT" name="Error Validation Test" finished-at="2024-05-22T20:16:32 COT" duration-ms="23522">
+      <class name="seleniumproject.test.ErrorValidationsTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:seleniumproject.test.ErrorValidationsTest@5c7bfdc1]" started-at="2024-05-22T20:16:09 COT" name="launchApplication" finished-at="2024-05-22T20:16:14 COT" duration-ms="4931" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="loginErrorValidation()[pri:0, instance:seleniumproject.test.ErrorValidationsTest@5c7bfdc1]" started-at="2024-05-22T20:16:14 COT" name="loginErrorValidation" finished-at="2024-05-22T20:16:15 COT" duration-ms="1402" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginErrorValidation -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:seleniumproject.test.ErrorValidationsTest@5c7bfdc1]" started-at="2024-05-22T20:16:15 COT" name="launchApplication" finished-at="2024-05-22T20:16:21 COT" duration-ms="5487" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="productErrorValidation()[pri:0, instance:seleniumproject.test.ErrorValidationsTest@5c7bfdc1]" started-at="2024-05-22T20:16:21 COT" name="productErrorValidation" finished-at="2024-05-22T20:16:32 COT" duration-ms="11687" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- productErrorValidation -->
+      </class> <!-- seleniumproject.test.ErrorValidationsTest -->
+    </test> <!-- Error Validation Test -->
+  </suite> <!-- Suite -->
+</testng-results>
